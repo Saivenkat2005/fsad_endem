@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9; /* Light background for contrast */
+        color: #333; /* Dark text for readability */
+      }
+    
+      .quiz-settings select, 
+      .quiz-settings button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: 2px solid #4caf50; /* Vibrant border color */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Larger font size */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+      }
+    
+      .quiz-settings select:hover, 
+      .quiz-settings button:hover {
+        background-color: #4caf50; /* Change background on hover */
+        color: white; /* Change text color on hover */
+      }
+    
+      .question h2 {
+        margin-bottom: 20px;
+        font-size: 24px; /* Larger heading */
+        color: #2c3e50; /* Darker color for headings */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+      }
+    
+      .answer-options label {
+        display: block;
+        margin: 10px 0;
+        font-size: 18px; /* Larger font for options */
+        transition: transform 0.2s; /* Smooth scaling effect */
+      }
+    
+      .answer-options label:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+      }
+    
+      .navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+    
+      .progress-bar {
+        width: 100%;
+        height: 20px;
+        background-color: #e0e0e0;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 10px; /* Rounded corners for progress bar */
+        overflow: hidden; /* Ensure inner progress doesn't overflow */
+      }
+    
+      .progress-bar .progress {
+        height: 100%;
+        background-color: #4caf50; /* Vibrant green for progress */
+        transition: width 0.4s; /* Smooth transition for progress */
+      }
+    
+      .progress-bar span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* White text for contrast */
+        font-weight: bold; /* Bold text for emphasis */
+      }
+    
+      /* Additional styles for buttons */
+      button {
+        cursor: pointer; /* Pointer cursor for buttons */
+      }
+    
+      /* Responsive typography */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px; /* Reduce padding on smaller screens */
+        }
+    
+        .quiz-settings select, 
+        .quiz-settings button {
+          font-size: 14px; /* Smaller font size on mobile */
+        }
+    
+        .question h2 {
+          font-size: 20px; /* Smaller heading on mobile */
+        }
+    
+        .answer-options label {
+          font-size: 16px; /* Smaller options on mobile */
+        }
+      }
+      
+    </style>
+     
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
